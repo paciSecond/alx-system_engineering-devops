@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# While loop that displays Best School,bad luck,good luck when other times,
+# 4th etration,8th iteration respectively
+
+
+i=1
+while ((i<=20))
+do
+	case $i in
+		4)
+			echo $i
+			echo "bad luck from China"
+			;;
+		9)
+			echo $i
+			echo "bad luck from Japan"
+			;;
+		17)
+			echo $i
+			echo "bad luck from Italy"
+			;;
+		*)
+			echo $i
+		esac
+	((i += 1));
+done

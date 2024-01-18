@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# While loop that displays Best School,bad luck,good luck when other times,
+# 4th etration,8th iteration respectively
+
+
+i=0
+while ((i<10))
+do
+	if ((i==3))
+	then
+		echo "bad luck"
+	elif ((i==7))
+	then
+		echo "good luck"
+	else
+		echo "Best School";
+	fi
+	((i += 1));
+done

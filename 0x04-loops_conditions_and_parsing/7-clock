@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+#display hors and minutes
+
+hour=0
+min=1
+while ((min<60));
+do
+	if((min==59 && hour==12))
+	then
+		echo $min
+		break
+	fi
+	if((min==59 && hour!=12))
+	then
+		echo $min
+		((hour+=1));
+		((min=1));
+	fi
+	if((min==1))
+	then
+		echo Hour: $hour
+	fi
+	echo $min
+	((min += 1));
+done

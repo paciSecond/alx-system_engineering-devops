@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Displays all name of files in current folder
+
+for file in *;
+do
+    echo "$file" | cut -d "-" -f 2
+done;
